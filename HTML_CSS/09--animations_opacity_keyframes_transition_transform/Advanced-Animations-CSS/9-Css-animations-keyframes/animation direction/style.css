@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+}
+
+div {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	animation-name: moving;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+
+	/* *  Normal is the default value */
+	/* animation-direction: normal; */
+
+	/* *	reverse  will start from the animation end and will finish at the beginning of the animation */
+	/* animation-direction: reverse; */
+
+
+	/* * alternate It will start from the start of the animation and then it'll go to the end,and come back and then again to the end until animation-iteration-count will finish */
+	/* animation-direction: alternate; */
+
+
+		/* * alternate-reverse It will start from the end of the animation and then it'll go to the start,and come back and then again to the start until animation-iteration-count will finish */
+	animation-direction: alternate-reverse;
+}
+
+@keyframes moving {
+	0% { transform: translateX(0px); }
+
+	50% { transform: translateX(1000px); }
+
+	100% { transform: translate(1000px, 500px); }
+}

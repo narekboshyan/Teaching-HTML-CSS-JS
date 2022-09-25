@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: #cacaca;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.item {
+  background-color: #ff0037;
+  color: #fff;
+  font-size: 35px;
+  padding: 20px;
+  /* fill the remain space */
+  /* flex-grow: 1; */
+  flex: 1;
+}
+
+/* .item-3 {
+  height: 150px;
+}
+
+.item-4 {
+  align-self: flex-start;
+  align-self: stretch;
+} */
+
+/* CHANGING THE ORDERS OF ITEMS */
+/* .item-1 {
+  order: 3;
+}
+.item-2 {
+  order: 4;
+}
+.item-3 {
+  order: 0;
+}
+.item-4 {
+  order: 1;
+}
+.item-5 {
+  order: 2;
+} */
+
+.item-1 {
+  order: 3;
+}
+.item-2 {
+  order: 4;
+}
+.item-3 {
+  order: 0;
+}
+.item-4 {
+  /* In this case item 4 is 3 times bigger than rhe rest of the items */
+  /* flex-grow: 3; */
+}
+.item-5 {
+  order: 2;
+  /* flex: 5; */
+  flex-basis: 60%;
+  /* so by setting flex-shrink :0 we say that keep the item number 5 static and it won't be responsible  */
+  flex-shrink: 0;
+}

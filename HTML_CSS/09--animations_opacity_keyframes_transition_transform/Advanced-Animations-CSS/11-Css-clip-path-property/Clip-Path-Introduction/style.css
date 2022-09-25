@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  width: 400px;
+  height: 500px;
+  clip-path: polygon(0 0%, 100% 50%, 0% 100%);
+}
